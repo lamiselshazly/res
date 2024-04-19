@@ -1,0 +1,259 @@
+/* Define your responsive styles here */
+@media  (max-width: 952px) {
+
+  .navbar{
+   background-color: #f17b14;
+  }
+   
+ }
+ 
+ 
+ @media screen and (max-width: 858px) {
+  
+ }
+  
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.port{
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/img/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  transition: background-image 0.5s ease-in-out;
+ }
+ .center-logo {
+  position: absolute;
+  top: 66%;
+  right: 1%;  /* Adjust the left position as needed */
+  transform: translateY(-40%);
+   /* transform: translate(50%,30%);  */
+  animation: fadeIn 3s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.center-logo-img {
+  width: 350px; /* Adjust the size as needed */
+  opacity: 0.7; /* Adjust the opacity value for transparency */
+}
+
+
+ .navbar{
+  width: 65%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 65px;
+    border-radius: 0 0 20px 20px; /* Border radius for the top corners */
+    align-items: center;
+    background-color: #0c171d;  /*لون الناف*/
+    opacity: 75%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    /* top: -5px; Initial position above the viewport */
+    animation-duration: 1s;
+  animation-name: navbarAnimation;
+ }
+ @keyframes navbarAnimation {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  /* 100% {
+    opacity: 0;
+  } */
+}
+.navbar-logo{
+    margin-right: auto;
+    width: 250px;  /*عرض الناف*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    animation: fadeInOut 4s ;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.navbar li{
+    display:  inline-block;
+    margin-right: 20px;
+    line-height:30px ; /*بيتحكم ف مكان التابات ف الناف*/
+}
+.navbar li a{
+    color: white;
+}
+
+
+    /*CSS for title & discription*/
+    .content{
+    position: absolute;
+       top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(5, 3, 3);
+        
+    }
+    div.title{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    /* .text{  هيروح لصفحه العمال
+      font-size: 25px;
+      color: rgb(246, 249, 246);
+    }*/
+    .description{
+        font-size: 30px;
+        margin: bottom 20px; 
+    }
+    .pyramids{
+      color: #ed400b;
+      font-style: italic;
+      font-size: 35px;
+    }
+      /*.checkbotton{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 40px;
+      }*/
+      .bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        
+        font-size: 10px;
+        /* font-weight: bold; */
+        color: white;
+      }
+      .navbar li a:hover{
+        color: #b4784b;   /*يعمل لون علي التاب*/
+       }
+       .bottomright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0px;  /*تخليه ينزل تحت بدل ما هو جنب الناف*/
+        /* width: 10; */
+        background-color: #f1f1f100;
+      }
+  
+      .social-icon {
+        height: 10px;
+        width:30px;
+        left: 5px; /*حركه المثلثات مش الايكونز*/
+        border-left: 27px solid transparent;
+        border-right: 27px solid transparent;
+        border-bottom: 27px solid #634637;
+        margin: 5px;
+        position: relative;
+        transition: 0.3s;
+         /* margin-top: 9px; */
+      }
+
+      .social-icon i {
+        position: relative;
+        top: 5px;/*ظبطت الايكون ف نص شكل الهرم*/
+        /* left: 50%; */
+        right:  7px;
+        transform: translate(40%, 60%);
+        color: #ecd9d9;
+        /* height: -5px; */
+        /* width: 20px; */
+      }
+  
+      .social-icon.facebook i {
+        font-size: 1.6rem;
+        color:rgb(31, 159, 250);
+      
+      }
+      
+      .social-icon.facebook {
+          border-bottom-color: rgb(57, 57, 136);
+         }
+  
+      .social-icon:hover {
+        border-bottom-color: rgb(38, 150, 224);
+      }
+      .contact{
+        text-align: center;
+        /* position: relative; */
+      padding-top: 20px;
+      }
+      .bottomright{
+        bottom: 30px;
+        top: 30px;
+        border : none;
+        outline: none; 
+        border-radius: 49px;
+        /* color:transparent; */
+        text-transform: uppercase;
+        
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 700;
+        margin: 10px 0;
+        cursor: pointer;
+        /* transition: 0.5s; */
+        text-align: center;
+        
+        
+      }
+      h1{
+        animation-duration: 2s;
+        animation-name: s;
+      }
+      @keyframes s{
+        0%{
+          opacity:0% ;
+          /* transform: rotate(90deg); */
+          filter: blur(20px);}
+          100%{
+            opacity: 1;
+            /* transform: rotate(0deg); */
+            filter: blur(0px);
+          }
+        from{margin-bottom: 100%;
+        }to{
+          text-align: center;
+        }
+      }

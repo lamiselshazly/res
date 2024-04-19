@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+    <meta charset="UTF-8">
+    <title>PYRAMIDS WORKERS</title>
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <meta name="view port" content="width=device-width,initial-scale=1.0">   
+    <link rel="icon" href="..\images\img\logo.png"/>  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>    
+     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+     <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+  <script src="C:\Users\HP\Desktop\try php for PW\js\Workers.js"></script>
+  <div class="background"></div>
+  
+    
+
+ <header>
+   <!--Navbar content-->
+   <div class="navbar">  
+        
+            
+   </label>
+   <img class="navbar-logo" src="..\images\img\logo.png" alt="Logo" id="logo">        
+      <ul>
+               <li><a href="../index.html"> Home</a></li> 
+               <li><a href="Apps.html"> Apss&Software</a></li>  
+               <li><a href="Customers.html"> Companies</a></li>
+               <li><a href="Workers.html"> Human Resourses</a></li>
+               <li><a href="Cooperations.html"> Cooperations</a></li>
+               
+       
+           </ul>
+      
+       </div>
+      </header>
+         <main>
+<!--Form for adding new worker -->
+        <p class="hh">welcome</p>
+       <div class="form-container">
+        <form class="formm"  action="Workers.php" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <div class="input-container">
+                    <input type="text" id="worker-name" name="workername"  required>
+              <label for="worker-name">First Name:</label>
+             
+            </div>
+                </div> </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <div class="input-container">
+                    <input type="text" id="father-name" name="fathername" required>
+              <label for="father-name">Family Name:</label>
+            </div>
+          </div> </div>
+        </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <div class="input-container">
+              <input type="text" id="mother-name" name="mothername" required>
+              <label for="mother-name">Mother Name:</label>
+            </div> </div>
+          </div>
+            </div>
+            
+           
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <div class="input-container">
+                      <input type="text" id="father-name" name="fathername" required>
+                      <label for="mother-name">Father Name:</label>
+            </div> </div>
+          </div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <div class="input-container">
+                    <input type="text" id="job" name="job" required>
+              <label for="job">  Profession:</label>
+            </div>
+          </div> </div>
+        </div>
+            
+        <div class="form-group">
+          <div class="row">
+            <div class="col">
+              <div class="input-container">
+                <input type="text" id="passport-number" name="passportnumber" required>
+          <label for="passport-number">Passport Number:</label>
+        </div>
+      </div>
+    </div> </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date-of-birth">Date Of Birth:</label>
+             <input type="date" id="date-of-birth" name="dateofbirth" required> 
+           </div>
+           
+            
+            <div class="form-group">
+              <label for="release-date">Passport Expire  Date:</label>
+              <input type="date" id="release-date" name="releasedate" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="photo-upload">Upload 1:</label>
+              <input type="file" id="photo-upload" name="photoupload" accept=".pdf,.doc,.docx" required multiple>
+            </div>
+            
+            <div class="form-group">
+              <label for="Criminal-Record">Upload 2:</label>
+              <input type="file" id="Criminal-Record" name="CriminalRecord" accept=".pdf,.doc,.docx" required multiple>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="experience-upload">Upload 3:</label>
+              <input type="file" id="experience-upload" name="experienceupload" accept=".pdf,.doc,.docx" required multiple>
+            </div>
+            
+            <div class="form-group">
+              <label for="Criminal-Record">Upload 4:</label>
+              <input type="file" id="Criminal-Record" name="CriminalRecord" accept=".pdf,.doc,.docx" required multiple>
+            </div>
+          </div>
+          
+          
+          <div class="form-row" id="">
+            <div class="form-group">
+              <select id="country-select" name="Wishcountry" onchange="changeBackground()" required>
+                <option value="0"  selected disabled > Current Country:</option>
+
+                <option value="Egypt">Egypt</option>
+                <option value="italy">Italy</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Germnay">Germnay</option>
+                <!--add more country option here-->
+              </select>
+            </div>
+            <div class="form-group">
+              <select id="country-select" name="Currentcountry"  required>
+                <option value="0"  selected disabled > Wish  Country:</option>
+                <option value="Egypt">Egypt</option>
+                <option value="italy">Italy</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Germnay">Germnay</option>
+                <!--add more country option here-->
+              </select>
+            </div>
+            
+          </div>
+          <div class="form-row">
+            <div class="form-group"> 
+              <select id="Languages" name="Languages"  required>
+                <option value="0"  selected disabled >Languages:</option>
+                <option value="English">English</option>
+                <option value="Italic">Italic</option>
+                <option value="Croatia">Croatian</option>
+                <option value="German">German</option>
+                <!--add more country option here-->
+              </select>
+              
+            </div>
+            
+            <div class="form-group" >
+              <select id="howgood" name="howgood"  required>
+                <option value="0"  selected disabled > How Good</option>
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+               
+              </select>
+            </div>
+          </div>
+            <div class="form-group">
+              <select for="how-know" class="howknow" required>
+                <option value="0"  selected disabled > How did you know about us?</option>
+                <option value="beginner">Fcebook</option>
+                <option value="intermediate">Linkedin</option>
+                <option value="advanced">Friend</option>
+                <option  value="other">Other</option>
+              </select>  
+              <textarea rows="6" cols="50" id="about-u" name="aboutu" class="tellus" placeholder="Tell Us About U "></textarea>
+            
+            </div>
+            <div class="con">
+              <label for="Conditinos" >I Accept All Conditions</label>
+                           <input type="checkbox" id="Conditinos" name="Conditinos" required>
+                           <li><a href="conditions.html"  ><label class="conditions" >To read Conditions</label></a></li> 
+                           
+                 </div>
+                 <button  id="submit-btn" onclick="submitForm()">Submit</button>
+          
+        </form>
+        
+      </div>
+         </main>
+      
+      
+        <div id="output" ></div>
+        <div class="bottomright"> 
+          <a href="#" class="social-icon" id="face">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" id="google">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon" id="x">
+            <i class="fas fa-times"></i>
+          </a>
+          <a href="#" class="social-icon" id="linked">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+ 
+  
+</body>
+</html>
+
+
+
+

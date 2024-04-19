@@ -1,0 +1,679 @@
+    *{
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          list-style: none;
+          box-sizing: border-box;
+        }
+       body{
+          padding: 0;
+          margin: 0;
+          background-image: url('../images/img/Background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          background-size: 100% 100%;
+          transition: background-image 0.5s ease-in-out;
+         /* position: absolute; */
+         overflow: hidden;
+        }  
+                     /*-----------------Nav CSS-----------------*/
+
+        .navbar{
+          width: 60%;
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%);
+          height: 50px;
+          border-radius: 0 0 20px 20px;
+          align-items: center;
+          background-color: #0c171d;
+          opacity: 0.75;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+         animation-duration: 1s;
+         animation-name: navbarAnimation;
+       }
+       @keyframes navbarAnimation {
+        0% {
+          top: -50px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+      
+      .navbar-logo{
+          margin-right: auto;
+          width: 220px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+      }
+      .navbar ul{
+          float: right;
+          margin-right: 20px;   /* مكانهم في الناف*/
+          margin-top: 7px;
+      }
+      .navbar li{
+          display:  inline-block;
+          margin-right: 20px;
+          line-height:20px ; /*بيتحكم ف مكان التابات ف الناف*/
+      }
+      .navbar li a{
+          color: white;
+      }  
+       .navbar li a:hover{
+        color: #b4784b;   /*يعمل لون علي التاب*/
+       }
+        
+                                 /*--------------- form edits-----------------*/
+          .container{
+            text-align: center;
+            height: 700px;
+           }
+           h2{
+            color: white;
+            margin-top: 30px;
+            
+           }  
+           #countrySelect {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-top: 20px;
+            
+          } 
+        
+           h2{
+            color: white;
+           margin-top: 30px;
+           } 
+           
+          
+          .form-container {
+            margin: 0px  auto;
+            width: 680px;
+            height: 692px;
+            padding: 25px;
+            padding-bottom: 60px;
+            padding-top: 50px;
+            top: 7%;
+            left: 3%;
+             /*transform: translate(/*10%,*/ /*10%); Center the form vertically and horizontally */
+            background-color: #042f4b;
+            border-radius:5px;
+            opacity: 85%;
+            display: flex;
+            margin-left: 50px;
+            /* margin-top: 20px; */
+            /* left: 100%; */
+            /* transform: translateX(100%);   لو سالب بيحلي الفورم تتحرك من الشمال */
+            animation: slideFromLeft 2s ease forwards;
+            position: fixed;
+          }
+          @keyframes slideFromLeft {
+            from {
+              transform: translateX(-100%);
+              
+            }
+            to {
+              transform: translateX(calc(95vw - 708px));
+             
+            }
+          }
+        
+          
+          form div {
+            margin-bottom:8px;
+            color:rgb(252, 248, 248);
+            align-items: center;
+            margin-top: 9.5px; 
+          }
+          
+          label {
+            display: inline-block;
+            width: 200px  /*المسافه بين التيكست وبعضه بالطول*/
+            
+          }
+          
+          .form-row {
+            color: white;
+            display: flex;    
+            justify-content: space-between;
+            margin-bottom: -9px;
+            
+          }
+          .tellus{
+            border-radius: 4px;
+            resize: none;
+            height: 75px;
+            font-size: 15px;
+            width:  87%;
+            margin-top: 20px;
+            margin-left: 35px;
+            font-weight: bold;
+            color: #000;
+          }
+          .howknow{
+            width:  34%;
+            text-align: center;
+          }
+          .tell{
+            
+            text-align: center;
+            bottom: 60px;
+          }
+        
+          
+          .form-group {
+            
+            flex: 1;
+            margin-right: 50px; 
+            margin-left: 20px;
+            margin-top: 2px;
+            margin-bottom: 20px;
+            
+          }
+        
+          label {
+            display: inline-block;
+            margin-left: 37px;
+            /* margin-bottom: 5px; */
+          }
+          
+          input[type="text"],
+          input[type="date"],
+          input[type="file"],   
+          select {
+            width: 70%;   /* مساحه الانبوت في الفورم يكون طويله او قصيره بالعرض*/
+            padding: 5px;              /* مساحه الانبوت في الفورم يكون طويله او قصيره باطول*/
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 37px;
+            margin-top: 8px; 
+          }
+          
+          #output {
+            padding-top: 70ch;
+            left: 100px;
+            color: bisque;
+          
+          }    
+          .form-container.slide-in {
+            transform: translateX(0%);
+          } 
+          
+            
+                    /*---------------------Submit CSS---------------------*/
+         #submit-btn {
+          background-color: #252570;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer; 
+          margin-bottom: 25px;
+          position: absolute;
+          left: 40%;
+          margin-left:22px ; /*بيحرك الزرار شمال جوا الفورم */
+          /* padding-bottom: 9px; */
+          position: absolute;
+          margin-top: 5px;
+          margin-bottom: 20px;
+         
+        }
+    
+        #submit-btn:hover {
+          background-color: #158d25;
+          box-shadow: 0px 0px 5px midnightblue,
+                      0px 0px 30px mediumblue,
+                      0px 0px 30px mintcream;
+        }
+        button {
+          /*margin-top: 0px;*/
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 70px;
+          margin-top: 10px;
+          
+        }
+        button:active{
+          transform: scale(0.96);
+        }
+        
+        .hh{
+          font-family: 'Courier New', Courier, monospace;
+          opacity: 0.7;
+         font-size: xx-large;
+         /* transform: translate(-50%, -50%); */
+        animation: fadeIn 7s forwards;
+        text-align: left;
+        position: absolute;
+        left: 15%;
+        top: 45%;
+        }
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+         /* Media Queries for Responsiveness */
+ 
+  /* Mobile styles */
+/* @media (max-width: 767px) { */
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .form-row {
+    display: block;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+/* } */
+
+/* Desktop styles */
+/* @media (min-width: 768px) { */
+  .navbar {
+    justify-content: space-between;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    display: flex;
+  }
+
+  .form-group {
+    margin: 0 10px;
+  }
+/* } */
+.form-group {
+  margin-bottom: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.input-container {
+  position: relative;
+  margin-top: -30px; /*بيلعب ف المسافات بين الانبوت وبعضه */
+  
+}
+
+.input-container input[type="text"] {
+  padding: 5px;
+  
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%; /*مخلي البليسهولدر ف وسط الانبوت بالظبط*/
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.5;/*نسبه ظهور البلايسهولدر جوا الانبوت*/
+  transition: all 0.3s ease;
+  transform-origin: top left;
+  color: #000;
+}
+
+.input-container input[type="text"]:focus + label,
+.input-container input[type="text"].has-value + label,
+.input-container input[type="text"]:valid + label {
+  top: -2px; /*مسافه بعد اليبول فوق الانبوت */
+  left: 0;
+  color: #ffffff;
+  font-size: 15px;  /*حجدم الخط لما يبقا label*/
+  opacity: 1; /*نسبه ظهور الكلاك لما يبقا لابول*/
+   bottom: 25px;
+}
+ 
+    .con{
+      display: flex;
+      justify-content: space-between;
+       align-items: center;  
+  }    
+  /* .con input {
+    margin-right: 10px;
+  }
+  .con label {
+    margin-left: 10px;
+  }
+  */
+  
+  .conditions{
+    margin-right: 20px;
+    margin-bottom: -32px;
+    margin-top: -25px;
+    font-size: large;
+    color: rgb(242, 242, 19);
+    cursor: pointer;
+  }
+  
+  .input-container input {
+  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+  .social-icon {
+    height: 10px;
+    width:30px;
+    left: -15px; /*حركه المثلثات مش الايكونز*/
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid #634637;
+    margin: 5px;
+     /* top: 20px; */
+    position: relative;
+    transition: 0.3s;
+    margin-bottom: 700px;
+     /* margin-top: 9px; */
+     margin-right: 5px;
+  }
+  
+  .social-icon i {
+    position: relative;
+    top: 1px;/*ظبطت الايكون ف نص شكل الهرم*/
+    /* left: 50%; */
+    right:7px;
+  
+    transform: translate(15%, 60%);
+    color: #ecd9d9;
+    /* height: -5px; */
+    /* width: 20px; */
+  }
+
+  .social-icon.facebook i {
+    font-size: 1.6rem;
+    color:rgb(31, 159, 250);
+  
+  }
+  
+
+  .social-icon:hover {
+    border-bottom-color: rgb(38, 150, 224);
+  }
+  #face:hover{
+    border-bottom-color: rgb(31, 70, 143);
+  }
+  #google:hover{
+    border-bottom-color: rgb(137, 43, 22);
+  }
+  #x:hover{
+    border-bottom-color: rgb(0, 0, 0);
+  }
+  #linked:hover{
+    border-bottom-color: rgb(55, 107, 167);
+  }
+  .bottomright{
+    bottom: 30px;
+    top: 30px;
+    border : none;
+    outline: none; 
+    border-radius: 49px;
+    /* color:transparent; */
+    text-transform: uppercase;
+    display: flex;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    cursor: pointer;
+    /* transition: 0.5s; */
+    text-align: center;
+    justify-content: center;
+      align-items: center;
+    height: 0px;  /*تخليه ينزل تحت بدل ما هو جنب الناف*/
+    /* width: 10; */
+    background-color: #f1f1f100;
+  }
+  @media  (max-width: 990px){
+    .navbar ul {
+      /* display: none; */
+    }
+  
+    .navbar-dropdown {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #0c171d;
+      opacity: 0.75;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .navbar-dropdown ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .navbar-dropdown li {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-dropdown a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .form-container {
+      margin: 0px  auto;
+      width: 570px;
+      height: 580px;
+      padding: 25px;
+      padding-bottom: 60px;
+      padding-top: 50px;
+      top: 10%;
+      left: 1%;
+       /*transform: translate(/*10%,*/ /*10%); Center the form vertically and horizontally */
+      background-color: #372710;
+      border-radius:5px;
+      opacity: 85%;
+      display: flex;
+      margin-left: 50px;
+      /* margin-top: 20px; */
+      /* left: 100%; */
+      /* transform: translateX(100%);   لو سالب بيحلي الفورم تتحرك من الشمال */
+      animation: slideFromLeft 2s ease forwards;
+      position: fixed;
+    }
+    @keyframes slideFromLeft {
+      from {
+        transform: translateX(-100%);
+        
+      }
+      to {
+        transform: translateX(calc(105vw - 708px));
+       
+      }
+    }
+    .con{
+      top: -20px;
+      margin-left: 50px;
+    }
+    form div {
+      margin-bottom:2px;
+      color:rgb(235, 226, 226);
+      align-items: center;
+      margin-top: 9.5px; 
+    }
+    
+    label {
+      display: inline-block;
+      width: 200px  /*المسافه بين التيكست وبعضه بالطول*/
+      
+    }
+    
+    .form-row {
+      color: white;
+      display: flex;    
+      justify-content: space-between;
+      margin-bottom: -9px;
+      margin-top: 2px;
+      
+    }
+    .form-group {
+            
+      flex: 1;
+      margin-right: 10px; 
+      margin-left: 10px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      
+    }
+  
+    label {
+      display: inline-block;
+      margin-left: 37px;
+      /* margin-bottom: 5px; */
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    input[type="file"],   
+    select {
+      width: 60%;   /* مساحه الانبوت في الفورم يكون طويله او قصيره بالعرض*/
+      padding: 4px;              /* مساحه الانبوت في الفورم يكون طويله او قصيره باطول*/
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-left: 37px;
+      margin-top: 8px; 
+      
+    }
+    
+    #output {
+      padding-top: 70ch;
+      left: 100px;
+      color: bisque;
+    
+    }    
+    .form-container.slide-in {
+      transform: translateX(0%);
+    } 
+    .tellus{
+      border-radius: 4px;
+      resize: none;
+      height: 65px;
+      font-size: 15px;
+      width:  87%;
+      margin-top: 10px;
+      margin-left: 35px;
+      font-weight: bold;
+      color: #000;
+    }
+    .howknow{
+      width:  34%;
+      text-align: center;
+      margin-top: 1px;
+    }
+    .bottomright{
+      display: none;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      
+    }
+    .input-container {
+      position: relative;
+      margin-top: -7.5px; /*بيلعب ف المسافات بين الانبوت وبعضه */
+      
+    }
+    
+    .input-container input[type="text"] {
+      padding: 2px;
+      /* margin-top: 10px; */
+      
+    }
+    
+    .input-container label {
+      position: absolute;
+      top: 50%; /*مخلي البليسهولدر ف وسط الانبوت بالظبط*/
+      left: 5px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      opacity: 0.5;/*نسبه ظهور البلايسهولدر جوا الانبوت*/
+      transition: all 0.3s ease;
+      transform-origin: top left;
+      color: #000;
+    }
+    
+    .input-container input[type="text"]:focus + label,
+    .input-container input[type="text"].has-value + label,
+    .input-container input[type="text"]:valid + label {
+      top: -3px; /*مسافه بعد اليبول فوق الانبوت */
+      left: 0;
+      color: #ffffff;
+      font-size: 15px;  /*حجدم الخط لما يبقا label*/
+      opacity: 1; /*نسبه ظهور الكلاك لما يبقا لابول*/
+       bottom: 25px;
+    }
+    .howknow{
+      width:  34%;
+      text-align: center;
+    }
+    .howknow{
+      width:  30%;
+      text-align: center;
+    }
+    .hh{
+      font-family: 'Courier New', Courier, monospace;
+      opacity: 0.7;
+     font-size: xx-large;
+     /* transform: translate(-50%, -50%); */
+    animation: fadeIn 7s forwards;
+    text-align: left;
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+       

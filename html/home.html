@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyramids Workers</title>
+  <link rel="icon" href="..\images\img\logo.png"/> 
+  <style>
+    /* CSS styles for the landing page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('../images/img/Background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: 100% 100%;
+      transition: background-image 0.5s ease-in-out;
+    }
+    
+    .landing-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: transparent;
+      margin-bottom: 1rem;
+      animation: fade-in 3s ease-in-out forwards;
+       width: 350px;
+    }
+    
+    .message {
+      font-size: 2rem;
+      color: #703f29;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      top: 30px;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        color: transparent;
+      }
+      100% {
+        opacity: 1;
+        color: #333;
+      }
+    }
+  </style>
+  <script>
+    setTimeout(function() {
+      window.location.href = "../index.html";
+    }, 2000);
+  </script>
+</head>
+
+<body>
+  <div class="landing-container">
+    <!-- <h1 class="logo">Your Logo</h1> -->
+    <img class="logo" src="C:\Users\HP\Desktop\try php for PW\images\img\loogo.png" alt="Logo" id="logo">
+    <p class="message">Welcome to Pyramids Workers!</p>
+  </div>
+</body>
+
+</html>
